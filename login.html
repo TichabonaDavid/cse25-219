@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Items | AutoMarket BW</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+   <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-logolog"><a href="index.html"><img src="images/logos/logo1.png" alt="logo"></a></div>
+        </nav>
+    </header>
+    
+    <div class="login-bg">
+        <div class="login-card">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="login-options">
+                <label>
+                    <input type="checkbox"> Remember Me
+                </label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button onclick="login()" class="btn-signin">SIGN IN</button>
+			<br>
+			<p id="message"></p>
+            <p class="signup-btn">Don't have an account? <button>Sign up</button></p>
+        </div>
+    </div>
+ 
+<footer>
+    <div class="footer-container">
+		<div class="footer-left">
+			<div class="footer-logo">
+				<img src="images/logos/logo1.png" alt="logo" height="50">
+			</div>
+			<div class="socials">
+				<a href="#">
+					<img src="https://i1-c.pinimg.com/736x/21/76/d0/2176d0b83b7e7317fc8db2f64eab5f46.jpg" alt="Facebook" height="50" >
+				</a>
+				<a href="#">
+					<img src="https://i1-c.pinimg.com/736x/de/84/ec/de84ece92c36f184e873fa090c9e7624.jpg" alt="Instagram" height="50">
+				</a>
+				<a href="#">
+					<img src="https://i.pinimg.com/736x/ef/55/ac/ef55acaed134cf97d2a5f9f1e4815295.jpg" alt="Whatsapp" height="50">
+				</a>
+			</div>
+		</div>
+      <div class="copyright"> © AutoMarket BW, all rights reserved</div>
+        <div class="footer-content">
+            <address>
+                <i class="fas fa-phone"></i> +267 76 050 022<br>
+                <i class="fas fa-envelope"></i> automarketbw@gmail.com<br>
+                <i class="fas fa-map-marker-alt"></i> Plot 1011 Gaborone
+            </address>
+        </div>
+
+    </div>
+</footer>
+<script>
+	function login() {
+		let email = document.getElementById("email").value;
+		let password = document.getElementById("password").value;
+		let message = document.getElementById("message");
+		
+		let correctEmail = "automarket@gmail.com";
+		let correctPassword = "automarket";
+		
+		if (email === correctEmail && password === correctPassword) {
+			message.style.color = "white";
+			message.innerText = "Login Successful!";
+			setTimeout (function(){window.location.href = "index.html";}, 1000); //go to home after 1 second
+		} else {
+			message.style.color = "red";
+			message.innerText = "Invalid email or password";
+		}
+	}
+
+</script>
+</body>
+</html>

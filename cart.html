@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Items | AutoMarket BW</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-logo"><a href="index.html"><img src="images/logos/logo1.png" alt="logo"></a></div>
+				<ul class="nav-links">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="buyacar.html">BUY A CAR</a></li>
+					<li><a href="sell.html">SELL ITEMS</a></li>
+					<li><a href="accessories.html">ACCESSORIES</a></li>
+					<li><a href="spareparts.html"class="active">SPARE PARTS</a></li>
+					<li><a href="feedback.html">FEEDBACK</a></li>
+				</ul>
+				<div class="cart-login">
+					<div><a href="cart.html"><i class="fas fa-shopping-cart"></i> CART</a></div>
+					<div><a href="login.html"><i class="fas fa-user"></i> SIGN IN</a></div>
+				</div>
+			</div>
+        </nav>
+    </header>
+
+    <!-- ── MAIN ── -->
+    <main>
+        <section class="container">
+
+            <!-- Progress Steps -->
+            <ol class="cart-steps">
+                <li class="step active">
+                    <span class="step-circle">1</span>
+                    <span class="step-label">Shopping cart</span>
+                </li>
+                <hr class="step-line">
+                <li class="step">
+                    <span class="step-circle">2</span>
+                    <span class="step-label">Checkout</span>
+                </li>
+                <hr class="step-line">
+                <li class="step">
+                    <span class="step-circle">3</span>
+                    <span class="step-label">Payment</span>
+                </li>
+            </ol>
+
+        </section>
+
+        <!-- Cart Title Bar (full width) -->
+        <h2 class="cart-title-bar">MY CART</h2>
+
+        <section class="container cart-layout">
+
+            <!-- Cart Table -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+
+                    <tr>
+                        <td>
+                            <button class="remove-btn" title="Remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </td>
+                        <td>Steering wheel cover</td>
+                        <td><input class="qty-input" value="1" ></td>
+                        <td>BWP 150</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button class="remove-btn" title="Remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </td>
+                        <td>Honda Fit</td>
+                        <td><input class="qty-input" value="1" ></td>
+                        <td>BWP 60,000</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Order Summary -->
+            <aside class="order-summary-card">
+                <h3>ORDER SUMMARY</h3>
+                <p class="summary-row">
+                    <span>Total Items</span>
+                    <span id="totalItems">2</span>
+                </p>
+                <p class="summary-row">
+                    <span>Item Subtotal</span>
+                    <span id="subtotalDisplay">BWP 60,150</span>
+                </p>
+                <p class="summary-row total">
+                    <span>TOTAL</span>
+                    <span id="totalDisplay">BWP 60,150</span>
+                </p>
+                <button class="btn-checkout" onclick="checkout()">PROCEED TO CHECKOUT</button>
+            </aside>
+
+        </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-container">
+		<div class="footer-left">
+			<div class="footer-logo">
+				<img src="images/logos/logo1.png" alt="logo" height="50">
+			</div>
+			<div class="socials">
+				<a href="#">
+					<img src="https://i1-c.pinimg.com/736x/21/76/d0/2176d0b83b7e7317fc8db2f64eab5f46.jpg" alt="Facebook" height="50">
+				</a>
+				<a href="#">
+					<img src="https://i1-c.pinimg.com/736x/de/84/ec/de84ece92c36f184e873fa090c9e7624.jpg" alt="Instagram" height="50">
+				</a>
+				<a href="#">
+					<img src="https://i.pinimg.com/736x/ef/55/ac/ef55acaed134cf97d2a5f9f1e4815295.jpg" alt="Whatsapp" height="50">
+				</a>
+			</div>
+		</div>
+      <div class="copyright"> © AutoMarket BW, all rights reserved</div>
+        <div class="footer-content">
+            <address>
+                <i class="fas fa-phone"></i> +267 76 050 022<br>
+                <i class="fas fa-envelope"></i> automarketbw@gmail.com<br>
+                <i class="fas fa-map-marker-alt"></i> Plot 1011 Gaborone
+            </address>
+        </div>
+
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
