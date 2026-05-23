@@ -14,6 +14,10 @@
     <header class="navbar">
         <nav class="nav-container">
             <div class="nav-logo"><a href="index.html"><img src="images/logos/logo1.png" alt="logo"></a></div>
+			<button class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-mobile-wrapper" id="navMobileWrapper">
 				<ul class="nav-links">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="buyacar.html"class="active">BUY A CAR</a></li>
@@ -60,49 +64,49 @@
         <ul class="product-grid">
             <li class="card">
 			  <img  src="https://img.autotrader.co.za/47352173" alt="BMW" height=130px width=155px>
-			  <p>BMW G80<br>2021 • 45,000 km<br>BWP 320,000</br></p>
+			  <p>Make: BMW<br>Model: G80<br>Price: BWP 1 950 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://photos.webuycars.co.za/photobooth/F53A05758/Images/F53A057580.webp" alt="Corolla" height=130px width=155px>
-			  <p>Toyota Corolla<br>2019 • 68,000 km<br>BWP 280,000</br><p>
+			  <p>Make: TOYOTA<br>Model: COROLLA<br>Price: BWP 85 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://img.autotrader.co.za/41404745" alt="Mercedes" height=130px width=155px>
-			  <p>Mercedes C200<br>2020 • 52,000 km<br>BWP 350,000<br/><p>
+			  <p>Make: MERCEDES<br>Model: C200<br>Price: BWP 520 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://img.autotrader.co.za/45887097/Crop800x600" alt="VW" height=130px width=155px>
-			  <p>VW Polo 6<br>2022 • 30,000 km<br>BWP 410,000</br></p>
+			  <p>Make: VW<br>Model: POLO VIVO<br>Price: BWP 75 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
 			<li class="card">
 			  <img  src="https://ufsauto-jp-bucket-prod.s3.af-south-1.amazonaws.com/uploads/imports/products/BB0502107/product_image-677187556-1740564797.jpg" alt="Honda Fit" height=130px width=155px>
-			  <p>Honda Fit<br>2021 • 45,000 km<br>BWP 320,000</br></p>
+			  <p>Make: HONDA<br>Model: FIT L13a<br>Price: BWP 36 200</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://tbiz.hitechcars.co.bw/uploads/VehicleMedia_5585060522094117.jpg" alt="AUDI" height=130px width=155px>
-			  <p>AUDI A3 <br>2019 • 68,000 km<br>BWP 280,000</br></p>
+			  <p>Make: AUDI<br>Model: A3<br>Price: BWP 125 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://tbiz.hitechcars.co.bw/uploads/VehicleMedia_2871020922123009.jpg" alt="Toyota Landcruiser" height=130px width=155px>
-			  <p>Toyota Landcruiser <br> 2020 • 52,000 km<br>BWP 350,000</br></p>
+			  <p>Make: TOYOTA<br>Model: LANDCRUISER<br>Price: BWP 500 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 			
             <li class="card">
 			  <img  src="https://photos.webuycars.co.za/photobooth/91E400928/Thumbnails/91E4009280.webp" alt="BMW" height=130px width=155px>
-			  <p>BMW X3<br>2022 • 30,000 km<br>BWP 410,000</br></p>
+			  <p>Make: BMW<br>Model: X3<br>Price: 125 000</br></p>
 			  <button class="details-btn">Details</button>
 			</li>
 	
@@ -138,25 +142,6 @@
 
     </div>
 </footer>
-<script>
-let lastScroll = 0;
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-    let currentScroll = window.pageYOffset;
-
-    if(currentScroll > lastScroll){
-        navbar.style.top = "-120px";
-    }
-    else{
-        navbar.style.top = "0";
-    }
-
-    lastScroll = currentScroll;
-
-});
-</script>
+ <script src="script.js"></script>
 </body>
 </html>

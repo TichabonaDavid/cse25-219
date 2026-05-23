@@ -14,6 +14,10 @@
     <header class="navbar">
         <nav class="nav-container">
             <div class="nav-logo"><a href="index.html"><img src="images/logos/logo1.png" alt="logo"></a></div>
+			<button class="hamburger" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-mobile-wrapper" id="navMobileWrapper">
 				<ul class="nav-links">
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="buyacar.html">BUY A CAR</a></li>
@@ -121,25 +125,6 @@
 
     </div>
 </footer>
-<script>
-let lastScroll = 0;
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-    let currentScroll = window.pageYOffset;
-
-    if(currentScroll > lastScroll){
-        navbar.style.top = "-120px";
-    }
-    else{
-        navbar.style.top = "0";
-    }
-
-    lastScroll = currentScroll;
-
-});
-</script>
+ <script src="script.js"></script>
 </body>
 </html>
